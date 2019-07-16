@@ -1,0 +1,32 @@
+.body-right-part {
+   width: 33% ;
+  padding-left: 10px;
+  margin-top: 1%;
+}
+
+
+//mediaQuery........
+
+@media only screen and (max-width: 420px) {
+  .body-right-part {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 1%;
+  }
+
+
+}
+
+
+//760-media.........
+@media only screen and (max-width: 1024px) and (min-width: 421px){
+ .body-wrapper {
+   .right-left-wrapper {
+     .body-right-part {
+       width: 100%;
+       padding-left: 0px;
+       margin-top: 1%;
+     }
+   }
+ }
+}

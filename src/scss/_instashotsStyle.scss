@@ -1,0 +1,189 @@
+.insta-shots-container {
+  padding-top: 46px;
+  position: relative;
+  padding-left: 14px;
+  font-family: DroidSerif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+
+  ul {
+    .insta-shots-parent {
+      padding-bottom: 18px;
+
+      .insta-shots-img {
+        margin: auto;
+        overflow: hidden;
+        height: 312px;
+        background: #090e1d;
+        text-align: center;
+
+        .is-img {
+          width: 84%;
+          height: 84%;
+          margin-top: 25px;
+
+        }
+
+        .insta-shots-content {
+          position: relative;
+          color: white;
+          width: 89%;
+          word-spacing: 4px;
+          font-style: italic;
+
+          .insta-shots-head {
+            text-align: left;
+            position: absolute;
+            width: 68%;
+            bottom: 170px;
+            left: 25px;
+            word-spacing: 8px;
+
+          }
+
+          .insta-shots-description {
+            position: absolute;
+            bottom: 10px;
+            left: 19px;
+            text-align: left;
+
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        padding-top: 94px;
+      }
+
+    }
+  }
+}
+
+//imgCard-----
+
+.imgcard-container {
+  margin-top: 34%;
+  .imgcard-parent {
+     padding-left: 14px;
+    .imgcard-img {
+      margin: auto;
+      overflow: hidden;
+      height: 250px;
+      text-align: center;
+
+      .ic-img {
+        width: 100%;
+        height: 84%;
+
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 420px) {
+
+  .insta-shots-container {
+    ul {
+      .insta-shots-parent {
+        padding-bottom: 20px;
+
+        &:nth-child(3) {
+          padding-top: 0px;
+        }
+
+      }
+    }
+  }
+
+  //imgCard-----
+
+  .imgcard-container {
+    margin-top: 0%;
+  }
+}
+
+//media..........ipad+pro...
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 421px) {
+
+  .insta-shots-container {
+    padding-top: 46px;
+    position: relative;
+    padding-left: 14px;
+    font-family: DroidSerif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .insta-shots-parent {
+        padding-bottom: 30px;
+        width: 48%;
+
+        .insta-shots-img {
+          margin: auto;
+          overflow: hidden;
+          height: 500px;
+          background: #090e1d;
+          text-align: center;
+
+          .is-img {
+            width: 84%;
+            height: 84%;
+            margin-top: 25px;
+
+          }
+
+          .insta-shots-content {
+            position: relative;
+            color: white;
+            width: 89%;
+            word-spacing: 4px;
+            font-style: italic;
+            .insta-shots-head{
+              font-size: 40px;
+            }
+            .insta-shots-description{
+              font-size: 25px;
+            }
+
+          }
+        }
+
+        &:nth-child(3) {
+          padding-top: inherit;
+        }
+
+      }
+    }
+  }
+
+
+  //imgCard-----
+
+  .imgcard-container {
+    margin-top: 0;
+    .imgcard-parent {
+      padding-left:0px;
+      display: flex;
+      width: 49%;
+      .imgcard-img {
+        margin: auto;
+        overflow: hidden;
+        height: 250px;
+        text-align: center;
+
+        .ic-img {
+          width: 100%;
+          height: 84%;
+
+        }
+      }
+    }
+  }
+
+
+
+
+
+}

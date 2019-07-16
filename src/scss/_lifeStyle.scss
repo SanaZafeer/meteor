@@ -1,0 +1,382 @@
+//lifestyle
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: ﻿Nunito-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+}
+
+//colorVariables
+
+$header-top: #1a0e36;
+$header-text: #68676b;
+$bgGray: #f0f0f0;
+$bodyGray: #f5f5f5;
+
+
+//head
+
+.life-style {
+  .life-style-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    padding-top: 25px;
+    .ls-logo-name{
+      color: #f44f43;
+      font-weight: 600;
+    }
+
+    .life-style-head-ul {
+      display: flex;
+      width: 40%;
+      justify-content: space-between;
+      font-size: small;
+      text-transform: uppercase;
+
+      li {
+        list-style: none;
+        cursor: pointer;
+        .active-element {
+              color:#D2434E;
+            }
+      }
+
+    }
+  }
+
+  .ls-gradient {
+    height: 2px;
+    background: linear-gradient(to right, #f44336, #eb2b8e, #a316ec);
+  }
+
+
+  //vouge-body
+
+  .vouge-compo-container {
+    height: 400px;
+    padding-top: 14px;
+
+    .vouge-compo-img {
+      width: 99%;
+      height: 200px;
+      overflow: hidden;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .vouge-compo-content {
+      height: 50%;
+      padding-top: 16px;
+      background: white;
+
+      .v-views {
+        width: 23%;
+        display: flex;
+        justify-content: space-between;
+
+        .tag {
+          display: inline-block;
+          background: #8a3ab9;
+          color: white;
+          width: 54%;
+          text-align: right;
+          padding-right: 6px;
+
+        }
+
+        .view-count {
+          .fa-eye {
+            padding-right: 2px;
+          }
+        }
+      }
+
+      .vouge-compo-head {
+        width: 84%;
+        margin: auto;
+        word-spacing: 8px;
+        padding-top: 12px;
+        background: linear-gradient(to right, #f44336, #eb2b8e, #a316ec);;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+      }
+
+      .v-john-name {
+        padding-left: 50px;
+        padding-top: 8px;
+        display: inline-block;
+        font-size: small;
+        color: gray;
+      }
+
+      .v-description {
+        width: 84%;
+        margin: auto;
+        padding-top: 8px;
+
+
+      }
+
+    }
+  }
+
+  //celebHeadlines
+
+  .celeb-body-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 28px;
+    background: #f0f0f0;
+    padding-bottom: 20px;
+
+    .celebheadlines-compo-container {
+      padding-top: 12px;
+      width: 48%;
+
+      .celebheadlines-compo-ul {
+        background: #f0f0f0;
+
+        .cleb-parent {
+          display: flex;
+
+          .celebheadlines-compo-img {
+            list-style: none;
+            width: 85px;
+            overflow: hidden;
+            height: 80px;
+
+            .l-img {
+              width: 100%;
+            }
+          }
+
+          .celebheadlines-compo-content {
+            padding-left: 12px;
+
+            .celebheadlines-compo-head {
+            }
+
+            .ch-john-name {
+              display: inline-block;
+              padding-top: 4px;
+              color: gray;
+              font-size: small;
+              font-weight: 600;
+
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+
+//mediaQuery ..........
+
+
+@media only screen and(max-width: 420px) {
+
+  //head
+
+  .life-style {
+    .life-style-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: medium;
+      padding-top: 25px;
+
+      .ls-logo-name{
+        color: #fa0562;
+      }
+      .life-style-head-ul {
+        display: none;
+      }
+    }
+
+    .ls-gradient {
+      height: 1px;
+      background: linear-gradient(to right, #f44336, #eb2b8e, #a316ec);
+    }
+
+
+    //vouge-body
+
+    .vouge-compo-container {
+      padding-top: 6px;
+      height: 304px;
+      .vouge-compo-img {
+        width: 99%;
+        height: 100px;
+        overflow: hidden;
+        margin: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .vouge-compo-content {
+        height: 50%;
+        background: white;
+
+        .v-views {
+          width: 46%;
+          display: flex;
+          justify-content: space-between;
+          font-size: 11px;
+          .tag {
+            display: inline-block;
+            background: #8a3ab9;
+            color: white;
+            width: 60px;
+            text-align: right;
+            height: 18px;
+            font-size: small;
+          }
+
+          .view-count {
+            display: flex;
+            //padding-left: 28px;
+          }
+        }
+
+        .vouge-compo-head {
+          max-width: 84%;
+          margin: auto;
+          word-spacing: 8px;
+          padding-top: 12px;
+          background: linear-gradient(to right, #74289f, #3379de, #13bad8, #21d866);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+        }
+
+        .v-john-name {
+          padding-left: 22px;
+          padding-top: 8px;
+          display: inline-block;
+          font-size: small;
+          color: gray;
+        }
+
+        .v-description {
+          display: none;
+
+        }
+
+      }
+    }
+
+
+    //celebHeadlines
+
+    .celeb-body-wrapper {
+      display: flex;
+      justify-content: space-between;
+      background: #f0f0f0;
+      padding-bottom: 20px;
+
+      .celebheadlines-compo-container {
+        padding-top: 12px;
+        width: 48%;
+
+        .celebheadlines-compo-ul {
+          background: #f0f0f0;
+          font-size: xx-small;
+          .cleb-parent {
+            display: flex;
+            .celebheadlines-compo-img {
+              list-style: none;
+              width: 85px;
+              overflow: hidden;
+              height: 80px;
+            }
+            .celebheadlines-compo-content {
+              .ch-john-name {
+                padding-top: 4px;
+                color: gray;
+                font-size: 8px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+}
+
+//media....pro+ipad..
+
+@media only screen and (max-width: 1024px) and (min-width: 421px) {
+
+
+  .life-style {
+  .vouge-compo-container {
+    height: 500px;
+
+    .vouge-compo-img {
+      width: 99%;
+      height: 240px;
+      overflow: hidden;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .vouge-compo-content {
+      height: 50%;
+      padding-top: 16px;
+      background: white;
+
+      .v-views {
+        width: 23%;
+        display: flex;
+        justify-content: space-between;
+
+        .tag {
+          display: inline-block;
+          background: #8a3ab9;
+          color: white;
+          width: 54%;
+          text-align: right;
+          padding-right: 6px;
+
+        }
+
+        .view-count {
+          .fa-eye {
+            padding-right: 2px;
+          }
+        }
+      }
+
+      .v-john-name {
+        padding-left: 66px;
+      }
+
+      .v-description {
+        width: 84%;
+        margin: auto;
+        padding-top: 8px;
+
+
+      }
+    }
+  }
+  }
+}

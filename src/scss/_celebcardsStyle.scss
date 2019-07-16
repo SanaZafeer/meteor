@@ -1,0 +1,425 @@
+//lifestyle
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: ﻿Nunito-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+}
+
+//colorVariables
+
+$header-top: #1a0e36;
+$header-text: #68676b;
+$bgGray: #f0f0f0;
+$bodyGray: #f5f5f5;
+
+
+//head
+
+.celebrity {
+  .celebrity-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    padding-top: 25px;
+
+    .celeb-logo-name{
+      color:#8a3ab9;
+      font-weight: 600;
+    }
+    .celebrity-head-ul {
+      display: flex;
+      width: 40%;
+      justify-content: space-between;
+      font-size: small;
+      text-transform: uppercase;
+
+      li {
+        list-style: none;
+        cursor: pointer;
+        .active-element {
+          color:#D2434E;
+        }
+
+      }
+
+    }
+  }
+  .celb-gradient{
+    height: 2px;
+    background: linear-gradient(to right,#76259d,#2f7ee1,#1bd285);
+  }
+
+  //2nd-part
+
+  .celebscards-compo-container {
+    padding-top: 16px;
+    background: $bgGray;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .img-cont-container {
+      width: 48%;
+
+      .celebcards-compo-img {
+        width: 100%;
+        overflow: hidden;
+        height: 150px;
+
+        .cc-img {
+          width: 100%;
+
+        }
+      }
+
+      .celebcards-compo-content {
+        height: 150px;
+        background:white;
+
+        .content-container {
+          padding-top: 20px;
+
+          .cc-tag {
+            background: #dd4c39;
+            color:white;
+            font-size: 14px;
+            padding: 2px;
+            display: inline-block;
+            width: 78px;
+            text-align: right;
+          }
+
+          .cc-view-count {
+            padding-left: 10px;
+            font-size: small;
+            font-weight: 600;
+
+
+          }
+
+          .celebcard-compo-head {
+            width: 94%;
+            padding-left: 36px;
+            padding-top: 16px;
+
+          }
+
+          .cc-john-name {
+            font-size: small;
+            padding-top: 10px;
+            display: inline-block;
+            color: gray;
+            padding-left: 32px;
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+  //2nd-half
+  .news-tips-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    background: #f0f0f0;
+    .newscards2-compo-container1 {
+      background: white;
+      padding-bottom: 20px;
+      width:48%;
+      .newscards2-compo-container2 {
+        width: 100%;
+        .newscards2-compo-img {
+          height: 150px;
+          overflow: hidden;
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .newscards2-compo-content {
+          width: 100%;
+          height: 200px;
+
+          .n2-tag-container {
+            background: #dd4c39;
+            color: white;
+            font-size: 14px;
+            padding: 2px;
+
+            .n2-tag {
+              display: inline-block;
+              padding-top: 20px;
+              width: 78px;
+              text-align: right;
+            }
+          }
+
+          .n2-view-count {
+            padding-left: 10px;
+            font-size: small;
+            font-weight: 600;
+
+            .fa fa-eye {
+
+            }
+          }
+
+          .n2-head-text-container {
+            width: 94%;
+            padding-left: 30px;
+            padding-top: 16px;
+
+            .newscard-compo-head {
+
+            }
+
+            .n2-john-name {
+              font-size: small;
+              padding-top: 10px;
+              display: inline-block;
+              color: gray;
+            }
+
+            .n2-description {
+              font-size: 16px;
+              padding-top: 6px;
+            }
+
+          }
+        }
+
+      }
+    }
+
+    //right-2nd-half
+    .celebritytips-compo-container {
+      width: 48%;
+      .celebritytips-compo-ul {
+        background: #f0f0f0;
+
+        .celebritytips-parent {
+          display: flex;
+
+          .celebritytips-compo-img {
+            list-style: none;
+            width: 85px;
+            overflow: hidden;
+            height: 80px;
+
+            .ct-img {
+              width: 100%;
+              height: 85%;
+            }
+          }
+
+          .celebritytips-compo-content {
+            padding-left: 12px;
+            .celebritytips-compo-head {
+
+            }
+
+            .ct-john-name {
+              display: inline-block;
+              padding-top: 4px;
+              color: gray;
+              font-size: small;
+              font-weight: 600;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//mediaQuery................
+
+@media only screen and (max-width: 420px) {
+
+  //head
+
+  .celebrity {
+    .celebrity-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: medium;
+      padding-top: 25px;
+
+      .ls-logo-name {
+        color: #505dff;
+      }
+      .celebrity-head-ul {
+        display: none;
+
+      }
+    }
+
+    .celb-gradient {
+      height: 1px;
+      background: linear-gradient(to right, #76259d, #1fe14e, #ebdd45);
+    }
+
+    //2nd-part
+
+    .celebscards-compo-container {
+      padding-top: 16px;
+      background: $bgGray;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      .img-cont-container {
+        max-width: 48%;
+        .celebcards-compo-img {
+          max-width: 100%;
+          overflow: hidden;
+          height: 48px;
+          .cc-img {
+            max-width: 100%;
+          }
+        }
+
+        .celebcards-compo-content {
+          height: 40px;
+          background: white;
+
+          .content-container {
+            padding-top: 20px;
+
+            .cc-tag {
+              display: none;
+            }
+
+            .cc-view-count {
+              display: block;
+              margin-top: -12%;
+              font-size: 10px;
+              font-weight: 600;
+              padding-left: 0;
+            }
+
+            .celebcard-compo-head {
+             display: none;
+            }
+            .cc-john-name {
+              font-size: 8px;
+              padding-top:0;
+              padding-left: 0;
+            }
+
+          }
+        }
+
+      }
+    }
+
+    //2nd-half
+    .news-tips-wrapper {
+      display: none;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      background: #f0f0f0;
+
+      .newscards2-compo-container1 {
+        background: white;
+        width: 48%;
+        height: 75px;
+
+        .newscards2-compo-container2 {
+          width: 100%;
+
+          .newscards2-compo-img {
+            height: 48px;
+            overflow: hidden;
+            max-width: 100%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .newscards2-compo-content {
+            width: 100%;
+            height: 200px;
+            .n2-tag-container {
+             display: none;
+            }
+
+            .n2-view-count {
+
+              padding-left: 10px;
+              font-size: small;
+              font-weight: 600;
+            }
+
+            .n2-head-text-container {
+                display: none;
+            }
+          }
+
+        }
+      }
+
+      //right-2nd-half
+      .celebritytips-compo-container {
+        width: 48%;
+        display: none;
+
+        .celebritytips-compo-ul {
+          background: #f0f0f0;
+
+          .celebritytips-parent {
+            display: flex;
+
+            .celebritytips-compo-img {
+              list-style: none;
+              width: 85px;
+              overflow: hidden;
+              height: 80px;
+
+              .ct-img {
+                width: 100%;
+                height: 85%;
+              }
+            }
+
+            .celebritytips-compo-content {
+              //background: #dd4c39;
+              padding-left: 12px;
+
+              .celebritytips-compo-head {
+
+              }
+
+              .ct-john-name {
+                display: inline-block;
+                padding-top: 4px;
+                color: gray;
+                font-size: small;
+                font-weight: 600;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+//media..ipad+pro......
+
+@media only screen and (max-width: 1024px) and (min-width: 421px) {
+
+
+}
